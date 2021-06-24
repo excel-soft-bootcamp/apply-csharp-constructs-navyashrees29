@@ -18,11 +18,7 @@ namespace BodyMassIndexInformation
             this.height = height;
             this.weight = weight;
         }
-        public void setbmiValue(float bmiValue)
-        {
-            this.bmiValue = bmiValue;
-        }
-
+       
 
         public float getHeight()
         {
@@ -38,9 +34,9 @@ namespace BodyMassIndexInformation
         }
 
 
-        public float bmicalculation()
+        public void  BmiCalculation()
         {
-            return this.weight / this.height;
+            this.bmiValue= this.weight / this.height;
 
         }
 
