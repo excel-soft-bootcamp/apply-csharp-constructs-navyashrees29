@@ -10,20 +10,17 @@ namespace BodyMassIndexInformation
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Enter your height in meters");
-            float bmiHeight = float.Parse(Console.ReadLine());
 
+            ReadUserInputs userInput = new ReadUserInputs();
+            float bmiHeight = userInput.UserHeightInput();
+            float bmiWeight = userInput.UserWeightInput();
 
-            System.Console.WriteLine("Enter your weight in kilograms");
-            float bmiWeight = float.Parse(Console.ReadLine());
+            BMICalculate bmi = new BMICalculate(bmiHeight, bmiWeight);
+            float bmiValue = bmi.BmiCalculation();
 
-            BMICalculation bmi = new BMICalculation(bmiHeight, bmiWeight);
-            float height    =  bmi.getHeight();
-            float weight    =  bmi.getWeight();
-            float bmiValue  =  bmi.bmicalculation();
+            BMIValueCalculate bmiValueCalculate = new BMIValueCalculate();
+            bmiValueCalculate.BmiCompute(bmiValue);
 
-            BMIValueDisplay bmiDisplay = new BMIValueDisplay();
-            bmiDisplay.display(bmiValue);
         }
     }
 }

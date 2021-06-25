@@ -42,10 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BMICalculation.cs" />
-    <Compile Include="BMIValueDisplay.cs" />
+    <Compile Include="BMICalculate.cs" />
+    <Compile Include="BMIConsoleDisplay.cs" />
+    <Compile Include="BMIValueCalculate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadUserInputs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
