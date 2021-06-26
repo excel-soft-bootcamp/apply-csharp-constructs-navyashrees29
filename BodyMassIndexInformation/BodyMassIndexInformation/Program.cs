@@ -12,15 +12,17 @@ namespace BodyMassIndexInformation
         {
 
             ReadUserInputs userInput = new ReadUserInputs();
-            float bmiHeight = userInput.UserHeightInput();
-            float bmiWeight = userInput.UserWeightInput();
+            int bmiHeight = userInput.GetUserHeight();
+            int bmiWeight = userInput.GetUserWeight();
 
             BMICalculate bmi = new BMICalculate(bmiHeight, bmiWeight);
             float bmiValue = bmi.BmiCalculation();
 
-            BMIValueCalculate bmiValueCalculate = new BMIValueCalculate();
-            bmiValueCalculate.BmiCompute(bmiValue);
+            BMIValueValidate bmiValueValidate = new BMIValueValidate();
+            string message = bmiValueValidate.BmiValidate(bmiValue);
 
+            BMIConsoleDisplay display = new BMIConsoleDisplay();
+            display.ConsoleDisplay(message);
         }
     }
 }

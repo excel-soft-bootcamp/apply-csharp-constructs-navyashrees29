@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace BodyMassIndexInformation
 {
-    class BMIValueCalculate
+    class BMIValueValidate
     {
-        BMIConsoleDisplay display = new BMIConsoleDisplay();
-        public void BmiCompute(float bmiValue)
+  
+        public string BmiValidate(float bmiValue)
         {
             if (bmiValue < 18.5)
-                display.UnderWeight(bmiValue);
+                return "Underweight";
 
             else if (bmiValue >= 25)
-                display.OverWeight(bmiValue);
+                return "Overweight";
 
             else
-                display.Healthy(bmiValue);
+                return "healthy";
         }
     }
 }

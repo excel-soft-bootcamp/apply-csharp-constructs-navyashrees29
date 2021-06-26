@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="BMICalculate.cs" />
     <Compile Include="BMIConsoleDisplay.cs" />
-    <Compile Include="BMIValueCalculate.cs" />
+    <Compile Include="BMIValueValidate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReadUserInputs.cs" />

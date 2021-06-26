@@ -8,19 +8,10 @@ namespace BodyMassIndexInformation
 {
     class BMIConsoleDisplay
     {
-        public void UnderWeight(float bmiValue)
+        public void ConsoleDisplay(string message)
         {
-            System.Console.Write("Your weight is " + bmiValue + " underweight");
+            System.Console.WriteLine(message);
         }
 
-        public void OverWeight(float bmiValue)
-        {
-            System.Console.Write("Your weight is " + bmiValue + " overweight ");
-        }
-
-        public void Healthy(float bmiValue)
-        {
-            System.Console.WriteLine("Your weight is " + bmiValue + " healthy");
-        }
     }
 }
