@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace IDCardDetails
 {
-    public class StaffDeatils : CollegeIDCard
+    public class StaffIDCard : CollegeIDCard
     {
         private string typeOfWork;
-
-        public StaffDeatils(string typeOfWork, int id, string phoneNumber, string name, string address, string depatment, string dob):base(id,phoneNumber,name,address,depatment,dob)
+       
+        public string GetTypeOfWork()
+        {
+            return this.typeOfWork;
+        }
+        public StaffIDCard(int id, string name, string address, string typeOfWork) :base(id,name,address)
         {
             this.typeOfWork = typeOfWork;
         }

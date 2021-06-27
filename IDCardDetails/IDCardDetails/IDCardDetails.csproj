@@ -43,12 +43,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CollegeIDCard.cs" />
-    <Compile Include="GuestDetails.cs" />
+    <Compile Include="GuestIDCard.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StaffDetails.cs" />
-    <Compile Include="StudentDetails.cs" />
-    <Compile Include="TeacherDetails.cs" />
+    <Compile Include="StaffIDCard.cs" />
+    <Compile Include="StudentIDCard.cs" />
+    <Compile Include="TeacherIDCard.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
