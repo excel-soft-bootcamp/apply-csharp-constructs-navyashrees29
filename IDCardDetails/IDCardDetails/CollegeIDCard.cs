@@ -11,6 +11,18 @@ namespace IDCardDetails
         private int id ;
         private string name, address;
 
+        public int GetId()
+        {
+            return this.id;
+        }
+        public string GetName()
+        {
+            return this.name;
+        }
+        public string GetAddress()
+        {
+            return this.address;
+        }
         public CollegeIDCard(int id,string name)
         {
             this.id = id;
