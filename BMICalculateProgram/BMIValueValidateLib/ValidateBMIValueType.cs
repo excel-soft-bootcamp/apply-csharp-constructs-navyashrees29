@@ -8,7 +8,7 @@ namespace BMIValueValidateLib
 {
     public static class ValidateBMIValueType
     {
-        public static string BmiValidate(float bmiValue)
+        public static string BmiValueValidate(float bmiValue)
         {
             if (bmiValue < 18.5)
                 return bmiValue+ "Underweight";
