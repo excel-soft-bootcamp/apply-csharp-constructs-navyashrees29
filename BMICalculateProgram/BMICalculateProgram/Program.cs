@@ -16,7 +16,7 @@ namespace BodyMassIndexInformation
 
             float bmiValue = BMICalculateLib.CalculateBMIType.BmiCalculation(height, weight);
 
-            string message = BMIValueValidateLib.ValidateBMIValueType.BmiValidate(bmiValue);
+            string message = BMIValueValidateLib.ValidateBMIValueType.BmiValueValidate(bmiValue);
 
             ConsoleDisplayLib.ConsoleDisplayType.ConsoleDisplay(message);
         }
