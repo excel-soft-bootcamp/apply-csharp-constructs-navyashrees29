@@ -8,9 +8,7 @@ namespace BMICalculateLib
 {
     public static class CalculateBMIType
     {
-        public static float height;
-        public static float weight;
-        public static float bmiValue;
+    
 
         public static float BmiCalculation(float height,float weight)
         {
