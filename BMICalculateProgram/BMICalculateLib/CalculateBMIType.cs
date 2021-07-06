@@ -12,6 +12,7 @@ namespace BMICalculateLib
 
         public static float BmiCalculation(float height,float weight)
         {
+            float bmiValue;
            return bmiValue = weight / height;
         }
     
