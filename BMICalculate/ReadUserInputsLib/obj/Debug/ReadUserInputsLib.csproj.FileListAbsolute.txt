@@ -1,0 +1,5 @@
+C:\Users\navyashrees\source\repos\BodyMassIndexInformation\ReadUserInputsLib\bin\Debug\ReadUserInputsLib.dll
+C:\Users\navyashrees\source\repos\BodyMassIndexInformation\ReadUserInputsLib\bin\Debug\ReadUserInputsLib.pdb
+C:\Users\navyashrees\source\repos\BodyMassIndexInformation\ReadUserInputsLib\obj\Debug\ReadUserInputsLib.csproj.CoreCompileInputs.cache
+C:\Users\navyashrees\source\repos\BodyMassIndexInformation\ReadUserInputsLib\obj\Debug\ReadUserInputsLib.dll
+C:\Users\navyashrees\source\repos\BodyMassIndexInformation\ReadUserInputsLib\obj\Debug\ReadUserInputsLib.pdb
