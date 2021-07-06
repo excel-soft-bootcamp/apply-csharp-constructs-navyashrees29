@@ -18,7 +18,7 @@ namespace ConsoleInputReaderLib
 
         public static int GetUserWeight()
         {
-            ConsoleDisplayLib.ConsoleDisplayType.ConsoleDisplay("Enter your weight in meter:");
+            ConsoleDisplayLib.ConsoleDisplayType.ConsoleDisplay("Enter your weight in Kg:");
             string weightInKG = Console.ReadLine();
             int weight = int.Parse(weightInKG);
             return weight;
