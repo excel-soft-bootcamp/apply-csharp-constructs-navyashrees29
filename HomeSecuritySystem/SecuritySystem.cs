@@ -10,7 +10,7 @@ namespace HomeSecuritySystem
     {
         public void Update(string notification)
         {
-            Console.WriteLine("Door is "+notification+ " at "+ DateTime.Now.ToString());
-        }
+            Console.WriteLine(notification);
+        }       
     }
 }

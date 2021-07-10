@@ -6,20 +6,25 @@ using System.Threading.Tasks;
 
 namespace HomeSecuritySystem
 {
-    public delegate void DoorSensorStatusSystem(string status);
+    public delegate void DoorSensorStatusHandler(string status);
     class DoorSensor
     {
         string doorSensorStatus;
-        public event DoorSensorStatusSystem StatusChanged;
+        public event DoorSensorStatusHandler OnStatusChanged;
         public void Open()
         {
             doorSensorStatus = "Opened";
-            StatusChanged.Invoke(this.doorSensorStatus);
+            this.Notify();
         }
         public void Close()
         {
             doorSensorStatus = "Closed";
-            StatusChanged.Invoke(this.doorSensorStatus);
+            this.Notify();
+        }
+        void Notify()
+        {
+            string message =  $"{this.doorSensorStatus} and Time : {System.DateTime.Now.ToString()}";
+            OnStatusChanged.Invoke(message);
         }
     }
 }

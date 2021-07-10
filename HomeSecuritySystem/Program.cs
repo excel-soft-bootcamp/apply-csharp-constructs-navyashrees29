@@ -11,10 +11,10 @@ namespace HomeSecuritySystem
         static void Main(string[] args)
         {
             SecuritySystem securitySystem = new SecuritySystem();
-            DoorSensorStatusSystem sensorSystem = new DoorSensorStatusSystem(securitySystem.Update);
+            DoorSensorStatusHandler sensorSystem = new DoorSensorStatusHandler(securitySystem.Update);
 
             DoorSensor doorSensor = new DoorSensor();
-            doorSensor.StatusChanged += sensorSystem;
+            doorSensor.OnStatusChanged += sensorSystem;
             doorSensor.Open();
             doorSensor.Close();
         }
